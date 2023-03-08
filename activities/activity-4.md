@@ -27,5 +27,3 @@ Great job making it this far. Your page should be looking lovely and responsive 
 Ahhh, time for some milk and a cat nap!
 
 If you feel like an extra challenge though, see the extension activities in [Activity 5](./activity-5-extension.md)
-
-🙌

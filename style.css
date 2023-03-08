@@ -1,20 +1,188 @@
 :root {
-    --coral: #F05D5E;
-    --teal: #0F7173;
-    --light: #E7ECEF;
-    --dark: #272932;
-    --camel: #D8A47F;
+  --coral: #f05d5e;
+  --teal: #0f7173;
+  --light: #e7ecef;
+  --dark: #272932;
+  --camel: #d8a47f;
 }
 
 body {
-    background-color: var(--light);
+  background-color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oleo Script", cursive;
+  font-weight: 700;
+}
+
+p {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 
 .card {
-    padding: 10px;
-    margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 img {
-    width: 250px;
+  width: 250px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.intro {
+  margin: 20px 0;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.sub-intro {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.description {
+  display: none;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pet-pic {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  background-image: url(https://images.unsplash.com/photo-1517436073-3b8a7b0f3e1c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f9f3b2b3c3b4b4b4b4b4b4b4b4b4b4b&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+.cat-name {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.species {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.fav-food {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.birth-year {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    width: 80%;
+  }
+
+  .intro {
+    font-size: 3rem;
+  }
+
+  .sub-intro {
+    font-size: 2rem;
+  }
+
+  .description {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 70%;
+  }
+
+  .intro {
+    font-size: 4rem;
+  }
+
+  .sub-intro {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 2rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark);
+  }
+
+  .intro,
+  .sub-intro,
+  .description,
+  .cat-name,
+  .species,
+  .fav-food,
+  .birth-year {
+    color: var(--light);
+  }
+
+  .card {
+    background-color: var(--dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--light);
+  }
+
+  .intro,
+  .sub-intro,
+  .description,
+  .cat-name,
+  .species,
+  .fav-food,
+  .birth-year {
+    color: var(--dark);
+  }
+
+  .card {
+    background-color: #fff;
+  }
 }
